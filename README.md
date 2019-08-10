@@ -51,3 +51,21 @@ Model:
       alg.fit(trainset)
 ```
 
+## Example
+```
+Input Movie Name:     "Twelve Monkeys (1995)"
+
+Recommended Movies:   "Bob Roberts (1992)"
+                      "Star Trek: The Wrath of Khan (1982)"
+                      "Dead Man Walking (1995)"
+                      "Clockwork Orange, A (1971)"
+                      "Brazil (1985)"
+```
+
+## Contact & Feedback
+
+  - CHEN NAN(chennansg@126.com)
+
+## License
+Distributed under the MIT License. See LICENSE for more information.
+                      
