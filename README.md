@@ -38,4 +38,16 @@ Following algorithms are used in the experiment to find the best movie recommend
 |   BaselineOnly      |    0.9442     |
 |   NormalPredictor   |    1.5191     |
 |   SVD               |    0.9481     |
-|   SVDpp             |    0.9481     |
+|   SVDpp             |    0.9568     |
+|   NMF               |    1.0027     |
+
+## Model
+Based on above experiment result, KNNBaseline algorithm can achieve best performance with minimum RMSE. Hence we use it to build model for recommender system.
+```
+Model:
+      sim_options = {'name': 'pearson_baseline', 'user_based': False}
+      trainset = data.build_full_trainset()
+      alg = KNNBaseline(sim_options=sim_options)
+      alg.fit(trainset)
+```
+
